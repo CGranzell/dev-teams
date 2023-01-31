@@ -1,0 +1,53 @@
+.mainContainer {
+  text-align: center;
+   height: 40rem;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   /* margin-top: 3rem; */
+   position: relative;
+ 
+ }
+
+ .cardContainer {
+  height: 30rem;
+  width: 100%;
+
+ }
+ 
+ .heroTexts {
+   height: 20rem;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+ 
+ .heroHeader {
+   font-size: 1.5rem;
+   width: 100%;
+   
+ }
+ .heroDesc {
+   height: 2rem;
+   width: 70%;
+ 
+   margin-bottom: 3rem;
+ }
+ 
+ .imgContainer {
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ 
+ 
+ .cardContainer {
+   display: flex;
+   justify-content: space-evenly;
+ }
+ 
+ 

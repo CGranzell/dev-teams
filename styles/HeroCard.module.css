@@ -1,0 +1,47 @@
+.container {
+  height: 15rem;
+  width: 80%;
+  border: 3px solid rgb(128, 185, 54);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+background-color: rgb(26, 26, 71);
+}
+
+.link {
+  
+  text-decoration: none;
+}
+
+.imgContainer {
+  height: 5rem;
+  width: 5rem;
+  margin-top: 1.2rem;
+  border-radius: 50%;
+  border: 3px solid rgb(128, 185, 54);
+  position: relative;
+}
+
+.skillsContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  
+}
+
+.skillsContainer hr {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.skillWrapper {
+  height: 50px;
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
