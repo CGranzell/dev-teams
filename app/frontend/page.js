@@ -29,7 +29,7 @@ export default async function Page() {
         </div>
         <div className={styles.container}>
         
-          {data.users.map(({ id, firstName, lastName, image, email, phone }) => (
+          {data.users.map(({ id, firstName, lastName, image, email, phone, university }) => (
             <div key={id} className={styles.profileContainer}>
               <ProfileCard
                 id={id}
@@ -38,6 +38,7 @@ export default async function Page() {
                 image={image}
                 email={email}
                 phone={phone}
+                university={university}
               />
             </div>
           ))}

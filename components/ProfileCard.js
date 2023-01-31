@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const ProfileCard = ({ id, firstName, lastName, image, email, phone }) => {
+const ProfileCard = ({ id, firstName, lastName, image, email, phone, university }) => {
   return (
     <Link href={`/frontend/user/${id}`} className={styles.link}>
       <motion.div
@@ -39,7 +39,7 @@ const ProfileCard = ({ id, firstName, lastName, image, email, phone }) => {
           </div>
         </div>
         <div className={styles.row3}>
-          <p>Front-end Developer</p>
+          <p>{university}</p>
         </div>
       </motion.div>
     </Link>
