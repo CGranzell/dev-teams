@@ -24,7 +24,7 @@ import { userJson } from "../../../backend/page";
 
 export default async function Page({ params }) {
   const userInfo = fetchuserInfo(params);
-  console.log(userInfo);
+  // console.log(userInfo);
 
   const { id, firstName } = userInfo;
 
