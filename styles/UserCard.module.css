@@ -1,14 +1,14 @@
 .mainContainer {
   height: 100%;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* top container innehåll */
 .topContainer {
   height: 40%;
   width: 100%;
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
   display: flex;
   justify-content: center;
 }
@@ -24,7 +24,7 @@
 .bottomContainer {
   height: 60%;
   width: 100%;
-  border: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 
 .bottomContainer p {

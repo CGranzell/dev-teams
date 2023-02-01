@@ -15,7 +15,7 @@ const UserCard = ( { userInfo }) => {
               sizes="true"
               fill
               style={{
-                objectFit: 'cover',
+                objectFit: 'contain',
               }}
             />
         </div>

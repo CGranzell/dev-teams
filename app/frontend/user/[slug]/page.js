@@ -1,5 +1,9 @@
 import styles from './page.module.css';
-import UserCard from '@/components/UserCard';
+import frontendLogo from '../../../../public/images/wp9641823-front-end-developer-wallpapers.jpg';
+import Image from 'next/image';
+import InfoTab from '@/components/GeneralTab';
+import TabButton from '@/components/TabButton';
+import MainContainerUser from '@/components/MainContainerUser';
 // import { userJson } from "../../../frontend/page";
 
 // export let userJson = {};
@@ -25,34 +29,69 @@ async function fetchUsers(params) {
 // }
 
 export default async function Page({ params }) {
+  // const [infoTab, setInfoTab] = useState(second)
   // const userInfo = fetchuserInfo(params);
   const userInfo = await fetchUsers(params);
 
-  console.log(userInfo);
+  // console.log(userInfo.address.address);
 
-  const { id, firstName, lastName, image } = userInfo;
+  const { id, firstName, lastName, maidenName, age, gender, birthDate } =
+    userInfo;
   // console.log(id);
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.sideBar}></div>
+      {/* Sidebar */}
+      <div className={styles.sideBar}>
+        <div className={styles.logoContainer}>
+          <div className={styles.logoImg}>
+            <Image
+              src={frontendLogo}
+              alt="profile-picture"
+              quality={100}
+              sizes="true"
+              fill
+              style={{
+                objectFit: 'cover',
+                borderRadius: '50%',
+              }}
+            />
+          </div>
+          <p>My Info</p>
+        </div>
+        <div className={styles.infoTabsContainer}>
+          <TabButton title="General" />
+          <TabButton title="Contact" />
+          <TabButton title="Background" />
+          <TabButton title="Personal" />
+        </div>
+      </div>
+      {/* Main container  */}
       <div className={styles.container}>
         <div className={styles.nameContainer}>
-          <h2>
-            {firstName} {lastName}
-          </h2>
-        </div>
-        <div className={styles.backgroundContainer}>
-          <div className={styles.mainInfoWrapper}>
-            <div className={styles.mainInfoContainer}>
-              <UserCard userInfo={userInfo} />
+          <div className={styles.nameWrapper}>
+            <h2>
+              {firstName} {lastName}
+            </h2>
+          </div>
+          <div className={styles.frontendWrapper}>
+            <p>Front-end Developer</p>
+            <div className={styles.frontendImgWrapper}>
+              <Image
+                src={frontendLogo}
+                alt="profile-picture"
+                quality={100}
+                sizes="true"
+                fill
+                style={{
+                  objectFit: 'cover',
+                  borderRadius: '50%',
+                }}
+              />
             </div>
           </div>
-          <div className={styles.rowWrapper}>
-            <div className={styles.row1Container}></div>
-            <div className={styles.row2Container}></div>
-          </div>
         </div>
+        <MainContainerUser userInfo={userInfo} />
       </div>
     </div>
   );
