@@ -29,4 +29,50 @@
   width:90%;
   border: 1px solid black;
   position: relative;
+  border-radius: 8px;
+  background-color: rgb(235, 231, 231);
+  display: flex;
+  align-items: center;
 }
+
+.mainInfoWrapper {
+  height: 100%;
+  width:50%;
+  border: 1px solid black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.mainInfoContainer {
+  height: 85%;
+  width:80%;
+  border: 1px solid black;
+   border-radius: 8px;
+  background-color: white; 
+}
+
+.rowWrapper {
+  height: 100%;
+  width:50%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ .row1Container {
+  height: 40%;
+  width:70%;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+.row2Container {
+  height: 40%;
+  width:70%;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white;
+} 

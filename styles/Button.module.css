@@ -1,0 +1,8 @@
+.container {
+  height: 2rem;
+  width: 6rem;
+  border: 3px solid rgb(128, 185, 54);
+  border-radius: 6px;
+background-color: rgb(26, 26, 71);
+color: white;
+}

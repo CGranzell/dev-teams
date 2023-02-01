@@ -1,4 +1,5 @@
-import styles from './page.module.css'
+import styles from './page.module.css';
+import UserCard from '@/components/UserCard';
 // import { userJson } from "../../../frontend/page";
 
 // export let userJson = {};
@@ -11,11 +12,10 @@ async function fetchUsers(params) {
   return data;
 }
 
-
 //   function fetchuserInfo(params) {
 //   // API call, DB Query, fetch from the app
 
-//   // Här ligger problemet, gör en if sats 
+//   // Här ligger problemet, gör en if sats
 
 //   let userInfo = userJson.users?.find(
 //     (user) => user.id == params.slug
@@ -30,21 +30,30 @@ export default async function Page({ params }) {
 
   console.log(userInfo);
 
-  const { id, firstName, lastName } = userInfo;
+  const { id, firstName, lastName, image } = userInfo;
   // console.log(id);
 
   return (
-   <div className={styles.mainContainer}>
-    
-    <div className={styles.sideBar}></div>
+    <div className={styles.mainContainer}>
+      <div className={styles.sideBar}></div>
       <div className={styles.container}>
-          <div className={styles.nameContainer}>
-            <h2> {firstName} {lastName} </h2>
+        <div className={styles.nameContainer}>
+          <h2>
+            {firstName} {lastName}
+          </h2>
+        </div>
+        <div className={styles.backgroundContainer}>
+          <div className={styles.mainInfoWrapper}>
+            <div className={styles.mainInfoContainer}>
+              <UserCard userInfo={userInfo} />
+            </div>
           </div>
-          <div className={styles.backgroundContainer}>
-            
+          <div className={styles.rowWrapper}>
+            <div className={styles.row1Container}></div>
+            <div className={styles.row2Container}></div>
           </div>
+        </div>
       </div>
-   </div>
+    </div>
   );
 }
