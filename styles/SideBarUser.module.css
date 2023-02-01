@@ -32,3 +32,18 @@
   align-items: center;
   
 }
+
+.tabBtn {
+  
+    height: 1rem;
+    width: 4rem;
+    border: none;
+    background-color: transparent;
+    margin-top: 2rem;
+  
+  }
+  
+  .tabBtn:hover {
+    border-bottom: 1px;
+    color: blue;
+  }

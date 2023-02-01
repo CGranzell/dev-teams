@@ -1,46 +1,62 @@
-import React from 'react'
-import styles from '../styles/User.module.css'
+'use client';
+import React, { useState } from 'react';
+import styles from '../styles/User.module.css';
 import SideBarUser from '../components/SideBarUser';
-import Image from 'next/image';
-import frontendLogo from '../public/images/wp9641823-front-end-developer-wallpapers.jpg';
 import MainContainerUser from '../components/MainContainerUser';
+import HeaderUser from './HeaderUser';
+import GeneralTab from './GeneralTab';
 
 const User = ({ userInfo }) => {
-  const { id, firstName, lastName } =
-    userInfo;
+  
+  const [showGeneralTab, setShowGeneralTab] = useState(true);
+  const [showContactTab, setShowContactTab] = useState(true);
+  const [showBackgroundTab, setShowBackgroundTab] = useState(false);
+  const [showPersonalTab, setShowPersonalTab] = useState(false);
+
+  const generalTabHandler = () => {
+    setShowGeneralTab(true);
+    setShowBackgroundTab(false);
+  };
+  const contactTabHandler = () => {
+    setShowContactTab(true);
+    setShowPersonalTab(false);
+  };
+  const backgroundTabHandler = () => {
+    setShowGeneralTab(false);
+    setShowBackgroundTab(true);
+   
+  };
+  const personalTabHandler = () => {
+    setShowContactTab(false);
+    setShowPersonalTab(true);
+   
+  };
+
+  
+
   return (
     <div className={styles.mainContainer}>
       {/* Sidebar */}
-      <SideBarUser />
+      <SideBarUser
+        generalTabHandler={generalTabHandler}
+        contactTabHandler={contactTabHandler}
+        backgroundTabHandler={backgroundTabHandler}
+        personalTabHandler={personalTabHandler}
+      />
       {/* Main container  */}
       <div className={styles.container}>
-        <div className={styles.nameContainer}>
-          <div className={styles.nameWrapper}>
-            <h2>
-              {firstName} {lastName}
-            </h2>
-          </div>
-          <div className={styles.frontendWrapper}>
-            <p>Front-end Developer</p>
-            <div className={styles.frontendImgWrapper}>
-              <Image
-                src={frontendLogo}
-                alt="profile-picture"
-                quality={100}
-                sizes="true"
-                fill
-                style={{
-                  objectFit: 'cover',
-                  borderRadius: '50%',
-                }}
-              />
-            </div>
-          </div>
-        </div>
-        <MainContainerUser userInfo={userInfo} />
+        <HeaderUser userInfo={userInfo} />
+        <MainContainerUser
+          userInfo={userInfo}
+          showGeneralTab={showGeneralTab}
+          showContactTab={showContactTab}
+          showBackgroundTab={showBackgroundTab}
+          showPersonalTab={showPersonalTab}
+
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default User
+export default User;
