@@ -13,7 +13,7 @@ function fetchuserInfo(params) {
 
 export default async function Page({ params }) {
   const userInfo = fetchuserInfo(params);
-  console.log(userInfo);
+  // console.log(userInfo);
 
   const { id, title, firstName } = userInfo;
 
