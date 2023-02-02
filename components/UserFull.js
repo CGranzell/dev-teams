@@ -1,12 +1,11 @@
 'use client';
 import React, { useState } from 'react';
 import styles from '../styles/User.module.css';
-import SideBarUser from '../components/SideBarUser';
-import MainContainerUser from '../components/MainContainerUser';
-import HeaderUser from './HeaderUser';
-import GeneralTab from './GeneralTab';
+import SideBarUserFull from './SideBarUserFull';
+import MainContainerUser from './MainContainerUser';
+import HeaderUserFull from './HeaderUserFull';
 
-const User = ({ userInfo }) => {
+const UserFull = ({ userInfo }) => {
   
   const [showGeneralTab, setShowGeneralTab] = useState(true);
   const [showContactTab, setShowContactTab] = useState(true);
@@ -37,7 +36,7 @@ const User = ({ userInfo }) => {
   return (
     <div className={styles.mainContainer}>
       {/* Sidebar */}
-      <SideBarUser
+      <SideBarUserFull
         generalTabHandler={generalTabHandler}
         contactTabHandler={contactTabHandler}
         backgroundTabHandler={backgroundTabHandler}
@@ -45,7 +44,7 @@ const User = ({ userInfo }) => {
       />
       {/* Main container  */}
       <div className={styles.container}>
-        <HeaderUser userInfo={userInfo} />
+        <HeaderUserFull userInfo={userInfo} />
         <MainContainerUser
           userInfo={userInfo}
           showGeneralTab={showGeneralTab}
@@ -59,4 +58,4 @@ const User = ({ userInfo }) => {
   );
 };
 
-export default User;
+export default UserFull;

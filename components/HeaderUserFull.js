@@ -1,0 +1,38 @@
+import React from 'react'
+import styles from '../styles/HeaderUser.module.css'
+import Image from 'next/image';
+import fullstackLogo from '../public/images/wp9641830-front-end-developer-wallpapers.jpg';
+
+const HeaderUserFull = ({ userInfo }) => {
+
+  const { id, firstName, lastName } =
+  userInfo;
+
+  return (
+    <div className={styles.nameContainer}>
+    <div className={styles.nameWrapper}>
+      <h2>
+        {firstName} {lastName}
+      </h2>
+    </div>
+    <div className={styles.frontendWrapper}>
+      <p>Fullstack Developer</p>
+      <div className={styles.frontendImgWrapper}>
+        <Image
+          src={fullstackLogo}
+          alt="profile-picture"
+          quality={100}
+          sizes="true"
+          fill
+          style={{
+            objectFit: 'cover',
+            borderRadius: '50%',
+          }}
+        />
+      </div>
+    </div>
+  </div>
+  )
+}
+
+export default HeaderUserFull

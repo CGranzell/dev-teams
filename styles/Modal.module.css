@@ -1,0 +1,34 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.modalContent {
+  width: 50%;
+  min-height: 300px;
+  background-color: white;
+  padding: 25px;
+}
+
+.closeBtn {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgb(26, 26, 71);
+  border: 3px solid rgb(128, 185, 54);
+  color: white;
+}
+
+.closeBtn:hover {
+  cursor: pointer;
+  background-color: rgb(47, 47, 112);
+  border: 3px solid rgb(94, 135, 39);
+}

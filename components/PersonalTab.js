@@ -7,6 +7,7 @@ const PersonalTab = ({ title, userInfo }) => {
   return (
     <div className={styles.tabContent}>
     <h3>{title}</h3>
+    <hr />
     <div className={styles.textContainer}>
     <b><p>Height:</p></b>
     <p>{height}</p>

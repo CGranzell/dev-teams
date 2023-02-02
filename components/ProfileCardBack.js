@@ -4,9 +4,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const ProfileCard = ({ id, firstName, lastName, image, email, phone, university }) => {
+const ProfileCardBack = ({ id, firstName, lastName, image, email, phone, university }) => {
   return (
-    <Link href={`/frontend/user/${id}`} className={styles.link}>
+    <Link href={`/backend/user/${id}`} className={styles.link}>
       <motion.div
         className={styles.container}
         whileHover={{ scale: 1.1 }}
@@ -46,4 +46,4 @@ const ProfileCard = ({ id, firstName, lastName, image, email, phone, university 
   );
 };
 
-export default ProfileCard;
+export default ProfileCardBack;

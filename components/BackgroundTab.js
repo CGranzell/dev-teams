@@ -8,6 +8,7 @@ const BackgroundTab = ({ title, userInfo }) => {
   return (
     <div className={styles.tabContent}>
       <h3>{title}</h3>
+      <hr />
       <div className={styles.textContainer}>
       <b><p>University:</p></b>
       <p>{university}</p>

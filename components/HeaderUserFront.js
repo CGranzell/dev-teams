@@ -3,7 +3,7 @@ import styles from '../styles/HeaderUser.module.css'
 import Image from 'next/image';
 import frontendLogo from '../public/images/wp9641823-front-end-developer-wallpapers.jpg';
 
-const HeaderUser = ({ userInfo }) => {
+const HeaderUserFront = ({ userInfo }) => {
 
   const { id, firstName, lastName } =
   userInfo;
@@ -35,4 +35,4 @@ const HeaderUser = ({ userInfo }) => {
   )
 }
 
-export default HeaderUser
+export default HeaderUserFront

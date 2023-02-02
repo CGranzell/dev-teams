@@ -45,5 +45,6 @@
   
   .tabBtn:hover {
     border-bottom: 1px;
-    color: blue;
+    color: rgb(128, 185, 54);
+    cursor: pointer;
   }

@@ -1,4 +1,5 @@
-import User from '@/components/User';
+import UserFront from '@/components/UserFront';
+
 
 async function fetchUsers(params) {
   const response = await fetch(`https://dummyjson.com/users/${params.slug}`);
@@ -9,5 +10,5 @@ async function fetchUsers(params) {
 export default async function Page({ params }) {
   const userInfo = await fetchUsers(params);
 
-  return <User userInfo={userInfo} />;
+  return <UserFront userInfo={userInfo} />;
 }
