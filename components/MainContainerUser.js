@@ -42,9 +42,6 @@ const MainContainerUser = ({ userInfo, showContactTab, showGeneralTab, showBackg
           )}
           </div>
         </div>
-        {/* <div className={styles.row2Container}>
-            <InfoTab title="Contact"/>
-            </div> */}
       </div>
     </div>
   );

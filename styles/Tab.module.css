@@ -1,0 +1,27 @@
+.tabContent {
+  display: flex;
+  flex-direction: column;
+} 
+.tabContent h3 {
+text-align: center;
+}
+
+.tabContent hr {
+  width: 40%;
+}
+
+.tabContent p {
+  font-size: 0.6rem;
+ 
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  /* border: 1px solid black; */
+ 
+}
+
+.textContainer p {
+  margin-left: 1rem;
+}
