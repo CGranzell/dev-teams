@@ -7,24 +7,31 @@ const ContactTab = ({ title, userInfo }) => {
       <h3>{title}</h3>
       <hr />
       <div className={styles.textContainer}>
-      <b><p>Email:</p></b>
-      <p>{email}</p>
-      <b><p>Phone Nr:</p></b>
-      <p>{phone}</p>
+        <b>
+          <p>Email:</p>
+        </b>
+        <p>{email}</p>
+        <b>
+          <p>Phone Nr:</p>
+        </b>
+        <p>{phone}</p>
       </div>
       <div className={styles.textContainer}>
-      <b><p>Address:</p></b>
-      <p>{address.address}</p>
-      <p>{address.city}</p>
+        <b>
+          <p>Address:</p>
+        </b>
+        <p>{address.address}</p>
+        <p>{address.city}</p>
       </div>
       <div className={styles.textContainer}>
-      <b><p>Postal Code:</p></b>
-      <p>{address.postalCode}</p>
-      <p>{address.state}</p>
+        <b>
+          <p>Postal Code:</p>
+        </b>
+        <p>{address.postalCode}</p>
+        <p>{address.state}</p>
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default ContactTab
+export default ContactTab;

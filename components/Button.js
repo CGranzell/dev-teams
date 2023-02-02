@@ -9,8 +9,8 @@ const Button = ({ toggleModal, modalShown }) => {
       whileTap={{ scale: 0.9 }}
       className={styles.container}
       onClick={() => {
-          toggleModal(!modalShown);
-        }}
+        toggleModal(!modalShown);
+      }}
     >
       Hire Me
     </motion.button>

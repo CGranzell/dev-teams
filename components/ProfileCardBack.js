@@ -4,7 +4,15 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const ProfileCardBack = ({ id, firstName, lastName, image, email, phone, university }) => {
+const ProfileCardBack = ({
+  id,
+  firstName,
+  lastName,
+  image,
+  email,
+  phone,
+  university,
+}) => {
   return (
     <Link href={`/backend/user/${id}`} className={styles.link}>
       <motion.div

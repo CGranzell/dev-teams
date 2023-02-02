@@ -6,7 +6,6 @@ import MainContainerUser from './MainContainerUser';
 import HeaderUserFront from './HeaderUserFront';
 
 const User = ({ userInfo }) => {
-  
   const [showGeneralTab, setShowGeneralTab] = useState(true);
   const [showContactTab, setShowContactTab] = useState(true);
   const [showBackgroundTab, setShowBackgroundTab] = useState(false);
@@ -23,15 +22,11 @@ const User = ({ userInfo }) => {
   const backgroundTabHandler = () => {
     setShowGeneralTab(false);
     setShowBackgroundTab(true);
-   
   };
   const personalTabHandler = () => {
     setShowContactTab(false);
     setShowPersonalTab(true);
-   
   };
-
-  
 
   return (
     <div className={styles.mainContainer}>
@@ -51,7 +46,6 @@ const User = ({ userInfo }) => {
           showContactTab={showContactTab}
           showBackgroundTab={showBackgroundTab}
           showPersonalTab={showPersonalTab}
-
         />
       </div>
     </div>

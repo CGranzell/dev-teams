@@ -7,7 +7,6 @@ import HeaderUserBack from './HeaderUserBack';
 import GeneralTab from './GeneralTab';
 
 const UserBack = ({ userInfo }) => {
-  
   const [showGeneralTab, setShowGeneralTab] = useState(true);
   const [showContactTab, setShowContactTab] = useState(true);
   const [showBackgroundTab, setShowBackgroundTab] = useState(false);
@@ -24,15 +23,11 @@ const UserBack = ({ userInfo }) => {
   const backgroundTabHandler = () => {
     setShowGeneralTab(false);
     setShowBackgroundTab(true);
-   
   };
   const personalTabHandler = () => {
     setShowContactTab(false);
     setShowPersonalTab(true);
-   
   };
-
-  
 
   return (
     <div className={styles.mainContainer}>
@@ -52,7 +47,6 @@ const UserBack = ({ userInfo }) => {
           showContactTab={showContactTab}
           showBackgroundTab={showBackgroundTab}
           showPersonalTab={showPersonalTab}
-
         />
       </div>
     </div>
