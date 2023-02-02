@@ -7,8 +7,7 @@ import ContactTab from '../components/ContactTab';
 import BackgroundTab from './BackgroundTab';
 import PersonalTab from './PersonalTab';
 import Modal from './Modal';
-// import Overlay from './Overlay';
-import ReactDOM from 'react';
+import Form from './Form';
 
 const MainContainerUser = ({
   userInfo,
@@ -27,7 +26,7 @@ const MainContainerUser = ({
           toggleModal(false);
         }}
       >
-        <h1> modal!</h1>
+         <Form />
       </Modal>
       <div className={styles.mainInfoWrapper}>
         <div className={styles.mainInfoContainer}>
