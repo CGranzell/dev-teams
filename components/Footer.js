@@ -21,24 +21,24 @@ const Footer = () => {
       <div className={styles.grid}>
         <h3>Company</h3>
         <div className={styles.linksContainer}>
-          <Link href={'/'}>About Us</Link>
-          <Link href={'/'}>Terms of use</Link>
-          <Link href={'/'}>Privacy policy</Link>
+          <Link href={'#'}>About Us</Link>
+          <Link href={'#'}>Terms of use</Link>
+          <Link href={'#'}>Privacy policy</Link>
         </div>
       </div>
       <div className={styles.grid}>
         <h3>Information</h3>
         <div className={styles.linksContainer}>
-          <Link href={'/'}>Blog</Link>
-          <Link href={'/'}>FAQ</Link>
-          <Link href={'/'}>Hiring Interview Tips</Link>
+          <Link href={'#'}>Blog</Link>
+          <Link href={'#'}>FAQ</Link>
+          <Link href={'#'}>Hiring Interview Tips</Link>
         </div>
       </div>
       <div className={styles.grid}>
         <h3>Contact Us</h3>
         <div className={styles.linksContainer}>
-          <Link href={'/'}>+46-123456789</Link>
-          <Link href={'/'}>test@test.com</Link>
+          <Link href={'#'}>+46-123456789</Link>
+          <Link href={'#'}>test@test.com</Link>
           <div className={styles.socials}>
             <FaLinkedin />
             <FaFacebookSquare />

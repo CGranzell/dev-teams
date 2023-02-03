@@ -5,24 +5,17 @@
   display: flex;
   
 }
-
+/* Left container */
 .textContainer{
   height: 100%;
   width: 50%;
-  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
  align-items: center;
 }
-.testimonialsContainer{
-  height: 100%;
-  width: 50%;
-  border: 1px solid white;
-}
 
 .heroHeader {
   color: white;
-  /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   
@@ -30,7 +23,79 @@
 
 .heroText {
   color: white;
-  /* border: 1px solid white; */
   display: flex;
- width: 80%;
+  width: 80%;
+  font-size: 0.8rem;
+  line-height: 1.9;
+}
+
+/* Right container */
+.testimonialsContainer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialsWrapper {
+  height: 60%;
+  width: 60%;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+/* Top row */
+.row1{
+  height: 40%;
+  width: 100%;
+  display: flex;
+}
+
+.starContainer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  color: gold;
+  font-size: 2rem;
+}
+
+.imgContainer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgWrapper {
+  margin-top: 0.6rem;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* Bottom row */
+.row2{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testiMonialTextWrapper {
+  height: 70%;
+  width: 70%;
+}
+
+.testiMonialTextWrapper p {
+  font-size: 0.6rem;
 }
