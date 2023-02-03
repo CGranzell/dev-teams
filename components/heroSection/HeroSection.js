@@ -19,9 +19,18 @@ const HeroSection = () => {
         </div>
 
         <div className={styles.cardContainer}>
+        <div className={styles.wrapperCards}>
           <HeroCard to="/frontend" name="Frontend" img={fronendPic} />
+
+        </div>
+        <div className={styles.wrapperCards}>
+
           <HeroCard to="/backend" name="Backend" img={backendPic} />
+        </div>
+        <div className={styles.wrapperCards}>
+
           <HeroCard to="fullstack" name="Fullstack" img={fullstack} />
+        </div>
         </div>
 
         <div className={styles.imgContainer}></div>

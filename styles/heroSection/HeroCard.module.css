@@ -7,6 +7,7 @@
   flex-direction: column;
  align-items: center;
 background-color: rgb(26, 26, 71);
+
 }
 
 .link {
@@ -39,7 +40,7 @@ background-color: rgb(26, 26, 71);
 
 .skillWrapper {
   height: 50px;
-  width: 17rem;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
