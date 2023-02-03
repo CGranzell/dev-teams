@@ -5,6 +5,7 @@ import Nav from '@/components/Nav';
 // These styles apply to every route in the application
 import './global.css';
 import styles from './rootStyle.module.css';
+import Footer from '@/components/Footer';
 
 export const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <div className={styles.container}>
           <main>{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );

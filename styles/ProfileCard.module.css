@@ -3,8 +3,6 @@
   border: 3px solid rgb(128, 185, 54);
   border-radius: 1rem;
 background-color: rgb(26, 26, 71);
-
- 
 }
 
 .link {  
@@ -24,9 +22,7 @@ background-color: rgb(26, 26, 71);
 .row2{
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
   color: white;
-  /* border: 1px solid white; */
 }
 .row2 p {
     font-size: 0.6rem;
@@ -37,7 +33,6 @@ background-color: rgb(26, 26, 71);
   justify-content: space-around;
   align-items: center;
   color: white;
-  /* border-bottom: 1px solid white; */
 }
 .row3 p {
   text-align: center;

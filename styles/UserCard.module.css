@@ -1,14 +1,12 @@
 .mainContainer {
   height: 100%;
   width: 100%;
-  /* border: 1px solid red; */
 }
 
 /* top container innehåll */
 .topContainer {
   height: 40%;
   width: 100%;
-  /* border: 1px solid rgb(0, 0, 0); */
   display: flex;
   justify-content: center;
 }
@@ -16,15 +14,12 @@
 .imgContainer {
   height: 100%;
   width: 100%;
-  /* border-radius: 50%; */
-  /* border: 1px solid black; */
   position: relative;
 }
 
 .bottomContainer {
   height: 60%;
   width: 100%;
-  /* border: 1px solid rgb(0, 0, 0); */
 }
 
 .bottomContainer p {

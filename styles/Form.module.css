@@ -1,8 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
- 
-  
 }
 
 .container label{
@@ -33,4 +31,18 @@ font-size: 0.9rem;
   cursor: pointer;
   background-color: rgb(47, 47, 112);
   border: 2px solid rgb(94, 135, 39);
+}
+
+.wrapperLabel {
+  display: flex;
+  
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.6rem;
+}
+.successMessage {
+  color: green;
+  font-size: 0.7rem;
 }
