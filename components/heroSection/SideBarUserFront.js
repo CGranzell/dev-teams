@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/SideBarUser.module.css';
+import styles from '../../styles/heroSection/SideBarUser.module.css';
 import Image from 'next/image';
-import frontendLogo from '../public/images/wp9641823-front-end-developer-wallpapers.jpg';
+import frontendLogo from '../../public/images/wp9641823-front-end-developer-wallpapers.jpg';
 
 const SideBarUserFront = ({
   generalTabHandler,

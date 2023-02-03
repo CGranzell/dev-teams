@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import styles from '../styles/User.module.css';
-import SideBarUserBack from './SideBarUserBack';
+import styles from '../../styles/heroSection/User.module.css';
+import SideBarUserFront from './SideBarUserFront';
 import MainContainerUser from './MainContainerUser';
-import HeaderUserBack from './HeaderUserBack';
-import GeneralTab from './GeneralTab';
+import HeaderUserFront from './HeaderUserFront';
+import HeaderUserFront from './HeaderUserFront';
 
-const UserBack = ({ userInfo }) => {
+const User = ({ userInfo }) => {
   const [showGeneralTab, setShowGeneralTab] = useState(true);
   const [showContactTab, setShowContactTab] = useState(true);
   const [showBackgroundTab, setShowBackgroundTab] = useState(false);
@@ -32,7 +32,7 @@ const UserBack = ({ userInfo }) => {
   return (
     <div className={styles.mainContainer}>
       {/* Sidebar */}
-      <SideBarUserBack
+      <SideBarUserFront
         generalTabHandler={generalTabHandler}
         contactTabHandler={contactTabHandler}
         backgroundTabHandler={backgroundTabHandler}
@@ -40,7 +40,7 @@ const UserBack = ({ userInfo }) => {
       />
       {/* Main container  */}
       <div className={styles.container}>
-        <HeaderUserBack userInfo={userInfo} />
+        <HeaderUserFront userInfo={userInfo} />
         <MainContainerUser
           userInfo={userInfo}
           showGeneralTab={showGeneralTab}
@@ -53,4 +53,4 @@ const UserBack = ({ userInfo }) => {
   );
 };
 
-export default UserBack;
+export default User;

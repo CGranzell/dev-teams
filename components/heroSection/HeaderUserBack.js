@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../styles/HeaderUser.module.css';
+import styles from '../../styles/heroSection/HeaderUser.module.css';
 import Image from 'next/image';
-import backendLogo from '../public/images/wp9641819-front-end-developer-wallpapers.jpg';
+import backendLogo from '../../public/images/wp9641819-front-end-developer-wallpapers.jpg';
 
 const HeaderUserBack = ({ userInfo }) => {
-  const { id, firstName, lastName } = userInfo;
+  const { firstName, lastName } = userInfo;
 
   return (
     <div className={styles.nameContainer}>

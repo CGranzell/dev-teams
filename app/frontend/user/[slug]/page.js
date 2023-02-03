@@ -1,4 +1,4 @@
-import UserFront from '@/components/UserFront';
+import UserFront from '@/components/heroSection/UserFull';
 
 
 async function fetchUsers(params) {

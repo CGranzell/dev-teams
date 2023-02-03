@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../styles/HeaderUser.module.css';
+import styles from '../../styles/heroSection/HeaderUser.module.css';
 import Image from 'next/image';
-import fullstackLogo from '../public/images/wp9641830-front-end-developer-wallpapers.jpg';
+import fullstackLogo from '../../public/images/wp9641830-front-end-developer-wallpapers.jpg';
 
 const HeaderUserFull = ({ userInfo }) => {
-  const { id, firstName, lastName } = userInfo;
+  const { firstName, lastName } = userInfo;
 
   return (
     <div className={styles.nameContainer}>

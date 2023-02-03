@@ -1,10 +1,10 @@
 'use client';
-import styles from '../styles/ProfileCard.module.css';
+import styles from '../../styles/heroSection/ProfileCard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const ProfileCardBack = ({
+const ProfileCardFull = ({
   id,
   firstName,
   lastName,
@@ -14,7 +14,7 @@ const ProfileCardBack = ({
   university,
 }) => {
   return (
-    <Link href={`/backend/user/${id}`} className={styles.link}>
+    <Link href={`/fullstack/user/${id}`} className={styles.link}>
       <motion.div
         className={styles.container}
         whileHover={{ scale: 1.1 }}
@@ -54,4 +54,4 @@ const ProfileCardBack = ({
   );
 };
 
-export default ProfileCardBack;
+export default ProfileCardFull;

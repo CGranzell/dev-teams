@@ -1,4 +1,4 @@
-import UserBack from '@/components/UserBack';
+import UserBack from '@/components/heroSection/UserBack';
 
 async function fetchUsers(params) {
   const response = await fetch(`https://dummyjson.com/users/${params.slug}`);

@@ -1,5 +1,5 @@
 'use client';
-import styles from '../styles/ProfileCard.module.css';
+import styles from '../../styles/heroSection/ProfileCard.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';

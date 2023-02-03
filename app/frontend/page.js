@@ -1,4 +1,4 @@
-import ProfileCardFront from '@/components/ProfileCardFront';
+import ProfileCardFront from '@/components/heroSection/ProfileCardFront';
 import styles from './page.module.css';
 
 async function fetchUsers() {

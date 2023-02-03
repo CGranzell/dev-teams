@@ -1,4 +1,4 @@
-import styles from '../styles/UserCard.module.css';
+import styles from '../../styles/heroSection/UserCard.module.css';
 import Image from 'next/image';
 import Button from './Button';
 

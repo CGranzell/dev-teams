@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import styles from '../styles/User.module.css';
+import styles from '../../styles/heroSection/User.module.css';
 import SideBarUserFull from './SideBarUserFull';
 import MainContainerUser from './MainContainerUser';
 import HeaderUserFull from './HeaderUserFull';

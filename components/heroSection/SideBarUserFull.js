@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from '../styles/SideBarUser.module.css';
+import styles from '../../styles/heroSection/SideBarUser.module.css';
 import Image from 'next/image';
-import backendLogo from '../public/images/wp9641819-front-end-developer-wallpapers.jpg';
+import fullstackLogo from '../../public/images/wp9641830-front-end-developer-wallpapers.jpg';
 
-const SideBarUserBack = ({
+const SideBarUserFull = ({
   generalTabHandler,
   contactTabHandler,
   backgroundTabHandler,
@@ -14,7 +14,7 @@ const SideBarUserBack = ({
       <div className={styles.logoContainer}>
         <div className={styles.logoImg}>
           <Image
-            src={backendLogo}
+            src={fullstackLogo}
             alt="profile-picture"
             quality={100}
             sizes="true"
@@ -45,4 +45,4 @@ const SideBarUserBack = ({
   );
 };
 
-export default SideBarUserBack;
+export default SideBarUserFull;

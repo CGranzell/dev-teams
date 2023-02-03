@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import styles from '../styles/Form.module.css';
+import styles from '../../styles/heroSection/Form.module.css';
 import { motion } from 'framer-motion';
 
 const Form = () => {

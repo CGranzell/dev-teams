@@ -1,0 +1,36 @@
+.mainContainer {
+  height: 20rem;
+  width: 100%;
+  background-color: rgb(26, 26, 71);
+  display: flex;
+  
+}
+
+.textContainer{
+  height: 100%;
+  width: 50%;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+.testimonialsContainer{
+  height: 100%;
+  width: 50%;
+  border: 1px solid white;
+}
+
+.heroHeader {
+  color: white;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  
+}
+
+.heroText {
+  color: white;
+  /* border: 1px solid white; */
+  display: flex;
+ width: 80%;
+}

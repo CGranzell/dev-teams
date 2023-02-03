@@ -1,4 +1,4 @@
-import ProfileCardFull from '@/components/ProfileCardFull';
+import ProfileCardFull from '@/components/heroSection/ProfileCardFull';
 import styles from './page.module.css';
 
 async function fetchUsers() {

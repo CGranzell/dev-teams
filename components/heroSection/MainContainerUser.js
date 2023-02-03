@@ -1,12 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import styles from '../styles/MainContainerUser.module.css';
-import UserCard from '../components/UserCard';
-import GeneralTab from '../components/GeneralTab';
-import ContactTab from '../components/ContactTab';
+import styles from '../../styles/heroSection/MainContainerUser.module.css';
+import UserCard from '../heroSection/UserCard';
+import GeneralTab from '../heroSection/GeneralTab';
+import ContactTab from '../heroSection/ContactTab';
 import BackgroundTab from './BackgroundTab';
 import PersonalTab from './PersonalTab';
-import Modal from './Modal';
+import Modal from '../Modal';
 import Form from './Form';
 
 const MainContainerUser = ({

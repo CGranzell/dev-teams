@@ -1,5 +1,5 @@
 'use client';
-import styles from '../styles/Button.module.css';
+import styles from '../../styles/heroSection/Button.module.css';
 import { motion } from 'framer-motion';
 
 const Button = ({ toggleModal, modalShown }) => {

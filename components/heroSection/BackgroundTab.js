@@ -1,4 +1,4 @@
-import styles from '../styles/Tab.module.css';
+import styles from '../../styles/heroSection/Tab.module.css';
 
 const BackgroundTab = ({ title, userInfo }) => {
   const { university, name, address, company } = userInfo;

@@ -1,4 +1,4 @@
-import styles from '../styles/HeroCard.module.css';
+import styles from '../../styles/heroSection/HeroCard.module.css';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';

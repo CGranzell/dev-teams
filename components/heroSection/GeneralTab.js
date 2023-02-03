@@ -1,4 +1,4 @@
-import styles from '../styles/Tab.module.css';
+import styles from '../../styles/heroSection/Tab.module.css';
 
 const GeneralTab = ({ title, userInfo }) => {
   const { firstName, lastName, age, gender, birthDate } = userInfo;
