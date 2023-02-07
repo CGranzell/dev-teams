@@ -55,7 +55,7 @@
   /* Media Queries */
 @media (max-width: 699px) {
   .sideBar {
-    height: 60%;
+    /* height: 60%; */
     width: 20%;
     border: 3px solid rgb(128, 185, 54);
     margin-top: 4rem;
