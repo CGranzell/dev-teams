@@ -12,7 +12,7 @@ export default async function Page() {
 
   return (
     <div className={styles.mainContainer}>
-      <div className={styles.wrapper}>
+     <div className={styles.wrapper}>
         <div className={styles.header}>
           <h2>Front-end Developers</h2>
           <p>
@@ -36,8 +36,8 @@ export default async function Page() {
               </div>
             )
           )}
+          </div>
         </div>
-      </div>
     </div>
   );
 }

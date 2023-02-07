@@ -12,6 +12,7 @@ export default async function Page() {
 
   return (
     <div className={styles.mainContainer}>
+    <div className={styles.wrapper}>
         <div className={styles.header}>
           <h2>Back-end Developers</h2>
           <p>
@@ -35,6 +36,7 @@ export default async function Page() {
               </div>
             )
           )}
+        </div>
         </div>
     </div>
   );
