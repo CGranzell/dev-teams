@@ -23,8 +23,8 @@ const ContactTab = ({ title, userInfo }) => {
         <b>
           <p>Address:</p>
         </b>
-        <p>{address.address}</p>
-        <p>{address.city}</p>
+        {/* <p>{address.address}</p>
+        <p>{address.city}</p> */}
       </div>
       <div className={styles.textContainer}>
         <b>
