@@ -40,7 +40,8 @@ const UserBack = ({ userInfo }) => {
       />
       {/* Main container  */}
       <div className={styles.container}>
-        <HeaderUserBack userInfo={userInfo} />
+    <HeaderUserBack userInfo={userInfo} />
+        
         <MainContainerUser
           userInfo={userInfo}
           showGeneralTab={showGeneralTab}

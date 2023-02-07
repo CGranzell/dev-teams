@@ -11,7 +11,10 @@ const ContactTab = ({ title, userInfo }) => {
           <p>Email:</p>
         </b>
         <p>{email}</p>
-        <b>
+        
+      </div>
+      <div className={styles.textContainer}>
+      <b>
           <p>Phone Nr:</p>
         </b>
         <p>{phone}</p>

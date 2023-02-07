@@ -29,3 +29,43 @@
   position: relative;
 }
 
+/* Media Queries */
+@media (max-width: 699px) {
+  
+.nameContainer {
+  height: 3rem;
+    width: 80%;
+    display: flex;
+}
+
+.nameWrapper {
+  height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nameWrapper h2 {
+ font-size: 0.5rem;
+}
+
+
+.frontendWrapper {
+  height: 100%;
+    width: 50%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.frontendWrapper p {
+  font-size: 0.5rem;
+ }
+
+.frontendImgWrapper {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+}
+
+}

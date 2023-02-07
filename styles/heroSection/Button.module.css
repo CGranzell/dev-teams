@@ -7,3 +7,13 @@ background-color: rgb(26, 26, 71);
 color: white;
 cursor: pointer;
 }
+
+/* Media Queries */
+@media (max-width: 699px) {
+  .container {
+    height: 1.5rem;
+    width: 3.5rem;
+    border: 2px solid rgb(128, 185, 54);
+  font-size: 0.4rem;
+  }
+}

@@ -31,3 +31,33 @@
   display: flex;
   justify-content: center;
 }
+
+/* Media Queries */
+@media (max-width: 699px) {
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* top container innehåll */
+  .topContainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bottomContainer p {
+    
+    font-size: 0.2rem;
+  }
+  .bottomContainer h3 {
+    padding: 0 10px;
+    font-size: 0.4rem;
+  }
+  
+  .btnWrapper {
+    display: flex;
+    justify-content: center;
+  }
+}

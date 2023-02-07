@@ -46,3 +46,8 @@ font-size: 0.9rem;
   color: green;
   font-size: 0.7rem;
 }
+
+/* Media Queries */
+@media (max-width: 319px) {
+  
+}
