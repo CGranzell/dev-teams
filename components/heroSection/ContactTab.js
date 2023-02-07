@@ -1,7 +1,7 @@
 import styles from '../../styles/heroSection/Tab.module.css';
 
 const ContactTab = ({ title, userInfo }) => {
-  const { email, phone, address } = userInfo;
+  const { email, phone } = userInfo;
   return (
     <div className={styles.tabContent}>
       <h3>{title}</h3>
@@ -30,8 +30,8 @@ const ContactTab = ({ title, userInfo }) => {
         <b>
           <p>Postal Code:</p>
         </b>
-        <p>{address.postalCode}</p>
-        <p>{address.state}</p>
+        {/* <p>{address.postalCode}</p>
+        <p>{address.state}</p> */}
       </div>
     </div>
   );
