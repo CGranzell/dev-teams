@@ -18,13 +18,13 @@
 }
 
 .bottomContainer {
-  height: 60%;
+  height: 70%;
   width: 100%;
 }
 
 .bottomContainer p {
   padding: 0 10px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .btnWrapper {
