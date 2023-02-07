@@ -4,7 +4,6 @@ import styles from '../../styles/heroSection/User.module.css';
 import SideBarUserFront from './SideBarUserFront';
 import MainContainerUser from './MainContainerUser';
 import HeaderUserFront from './HeaderUserFront';
-import HeaderUserFront from './HeaderUserFront';
 
 const User = ({ userInfo }) => {
   const [showGeneralTab, setShowGeneralTab] = useState(true);
