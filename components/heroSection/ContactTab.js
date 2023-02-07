@@ -19,20 +19,7 @@ const ContactTab = ({ title, userInfo }) => {
         </b>
         <p>{phone}</p>
       </div>
-      <div className={styles.textContainer}>
-        <b>
-          <p>Address:</p>
-        </b>
-        {/* <p>{address.address}</p>
-        <p>{address.city}</p> */}
-      </div>
-      <div className={styles.textContainer}>
-        <b>
-          <p>Postal Code:</p>
-        </b>
-        {/* <p>{address.postalCode}</p>
-        <p>{address.state}</p> */}
-      </div>
+      
     </div>
   );
 };

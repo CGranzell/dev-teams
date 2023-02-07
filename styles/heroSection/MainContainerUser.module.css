@@ -44,7 +44,7 @@
 /* Media Queries */
 @media (max-width: 699px) {
   .backgroundContainer {
-    height: 90%;
+    height: 80%;
     width:100%;
     position: relative;
     border-radius: 8px;
