@@ -8,7 +8,8 @@ async function fetchUsers(params) {
 }
 
 export default async function Page({ params }) {
-  const userInfo = await fetchUsers(params);
+  let userInfo = null;
+   userInfo = await fetchUsers(params);
 
   return <UserFront userInfo={userInfo} />;
 }
