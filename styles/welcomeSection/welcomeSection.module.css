@@ -14,11 +14,12 @@
  align-items: center;
 }
 
+
 .heroHeader {
   color: white;
   display: flex;
   justify-content: center;
-  
+
 }
 
 .heroText {
@@ -28,6 +29,8 @@
   font-size: 0.8rem;
   line-height: 1.9;
 }
+
+ 
 
 /* Right container */
 .testimonialsContainer{
@@ -99,3 +102,69 @@
 .testiMonialTextWrapper p {
   font-size: 0.6rem;
 }
+
+/* Media Queries */
+@media (max-width: 699px) {
+
+
+  /* Left container */
+  .textContainer{
+ justify-content: center;
+  }
+  .heroHeader {
+    
+    font-size: 0.4rem;
+  }
+
+  .heroText {
+    font-size: 0.3rem;
+  }
+
+  /* Right container */
+.testimonialsContainer{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialsWrapper {
+  height: 50%;
+}
+
+/* Top row */
+.row1{
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+
+.star {
+  font-size: 1rem;
+}
+
+
+.imgWrapper {
+  
+  height: 2rem;
+  width: 2rem;
+  
+}
+
+/* Bottom row */
+.row2{
+  height: 50%;
+}
+
+.testiMonialTextWrapper {
+  height: 70%;
+  width: 70%;
+}
+
+.testiMonialTextWrapper p {
+  font-size: 0.4rem;
+}
+
+ }

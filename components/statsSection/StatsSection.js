@@ -5,8 +5,11 @@ const StatsSection = () => {
     <div className={styles.mainContainer}>
       <div className={styles.container}>
         <div className={styles.wrapper}>
+        
+
           <h2>30 +</h2>
           <p>Developers</p>
+       
         </div>
       </div>
       <div className={styles.container}>

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FaStar, FaQuoteLeft, FaThumbsUp } from 'react-icons/fa';
 import testiMonialPic from '../../public/images/pexels-vinicius-wiesehofer-1130626.jpg';
 
+
 const WelcomeSection = () => {
   return (
     <div className={styles.mainContainer}>

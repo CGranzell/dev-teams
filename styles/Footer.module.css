@@ -93,3 +93,30 @@ align-items: center;
   display: flex;
   justify-content: space-evenly;
 }
+
+
+/* Media Queries */
+@media (max-width: 699px) {
+  .container {
+    height: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .grid p {
+    font-size: 0.5rem;
+  }
+
+  .linksContainer a {
+    margin-top: 0.4rem;
+  }
+  .linksContainer p {
+    margin-top: 0.4rem;
+  }
+
+  .socials {
+    margin-top: 0.4rem;
+  }
+  
+}
