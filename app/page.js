@@ -1,4 +1,5 @@
 import HeroSection from '@/components/heroSection/HeroSection';
+import StatsSection from '@/components/statsSection/StatsSection';
 import WelcomeSection from '@/components/welcomeSection/WelcomeSection';
 
 export default async function Page() {
@@ -7,6 +8,7 @@ export default async function Page() {
     <>
       <WelcomeSection />
       <HeroSection />
+      <StatsSection />
     </>
   );
 }

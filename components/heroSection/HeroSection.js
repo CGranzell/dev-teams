@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
         </div>
 
-        <div className={styles.imgContainer}></div>
+        
       </div>
     </>
   );
