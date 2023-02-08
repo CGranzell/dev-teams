@@ -1,18 +1,34 @@
-import Link from 'next/link';
-import navStyles from '../styles/Nav.module.css';
-
+'use client';
+import React, { useState } from 'react';
+import styles from '../styles/Nav.module.css';
 
 const Nav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleBurger = () => {
+    setIsOpen((prev) => !prev);
+  };
+
+  const clicked = isOpen ? styles.hamburgerOpen : styles.hamburgerClosed;
+  
+
   return (
-    <nav className={navStyles.nav}>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
+    <nav className={styles.nav}>
+
+      {/* <div className={clicked} onClick={handleBurger}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div> */}
+      <div className={clicked} onClick={handleBurger}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      {isOpen && (
+        
+      <div className={styles.burgerMenu}></div>
+      )}
     </nav>
   );
 };
