@@ -1,8 +1,8 @@
 'use client';
 import React, { useState, useRef } from 'react';
 import styles from '../styles/Nav.module.css';
-import Link from 'next/link';
 import useOutsideClick from '@/hooks/useOutsideClick';
+import NavItem from './NavItem';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,33 +29,11 @@ const Nav = () => {
       </div>
       {isOpen && (
         <div className={styles.burgerMenu} ref={ref}>
-          <Link href={'/'} onClick={() => setIsOpen(false)}>
-            Home
-          </Link>
-          <Link href={'/frontend'} onClick={() => setIsOpen(false)}>
-            Frontend
-          </Link>
-          <Link href={'/backend'} onClick={() => setIsOpen(false)}>
-            Backend
-          </Link>
-          <Link href={'/fullstack'} onClick={() => setIsOpen(false)}>
-            Fullstack
-          </Link>
-          <Link href={'/about'} onClick={() => setIsOpen(false)}>
-            About
-          </Link>
-          <Link href={'/contact'} onClick={() => setIsOpen(false)}>
-            Contact
-          </Link>
+          <NavItem setIsOpen={setIsOpen} />
         </div>
       )}
       <div className={styles.links}>
-        <Link href={'/'}>Home</Link>
-        <Link href={'/frontend'}>Frontend</Link>
-        <Link href={'/backend'}>Backend</Link>
-        <Link href={'/fullstack'}>Fullstack</Link>
-        <Link href={'/about'}>About</Link>
-        <Link href={'/contact'}>Contact</Link>
+        <NavItem />
       </div>
     </nav>
   );
