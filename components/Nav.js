@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import styles from '../styles/Nav.module.css';
 import useOutsideClick from '@/hooks/useOutsideClick';
 import NavItem from './NavItem';
+import NavItemBurger from './NavItemBurger';
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +30,7 @@ const Nav = () => {
       </div>
       {isOpen && (
         <div className={styles.burgerMenu} ref={ref}>
-          <NavItem setIsOpen={setIsOpen} />
+          <NavItemBurger setIsOpen={setIsOpen} />
         </div>
       )}
       <div className={styles.links}>

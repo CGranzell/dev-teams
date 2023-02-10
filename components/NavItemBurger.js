@@ -9,12 +9,12 @@ const MENU_LIST = [
   { text: 'Contact', href: '/contact' },
 ];
 
-const NavItem = () => {
+const NavItem = ({ setIsOpen }) => {
   return (
     <>
       {MENU_LIST.map((item, key) => {
         return (
-          <Link key={key} href={item.href} >
+          <Link key={key} href={item.href} onClick={() => setIsOpen(false)}>
             {item.text}
           </Link>
         );
